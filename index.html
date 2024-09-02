@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .main-content {
+            margin-top: 80px;
+        }
+
+        .section {
+            margin: 20px;
+        }
+
+        .game {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .game-header {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .game-content {
+            padding: 20px;
+            display: none;
+        }
+
+        .game img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .game h2 {
+            margin: 0;
+        }
+
+        .game.active .game-header {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .game.active .game-content {
+            display: block;
+        }
+
+        .login,
+        .contact {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .login button,
+        .contact button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login button:hover,
+        .contact button:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .fortnite {
+            background-color: #8b4cfc;
+        }
+
+        .fifa {
+            background-color: #009b77;
+        }
+
+        .clash-royale {
+            background-color: #0057e7;
+        }
+
+        .free-fire {
+            background-color: #f5a623;
+        }
+
+        .rocket-league {
+            background-color: #1e90ff;
+        }
+
+        .zelda {
+            background-color: #ffcc00;
+        }
+
+        .baldurs-gate {
+            background-color: #5b3a29;
+        }
+
+        .alan-wake {
+            background-color: #2c3e50;
+        }
+
+        .cyberpunk {
+            background-color: #ff0066;
+        }
+
+        .apex-legends {
+            background-color: #ff4500;
+        }
+
+        .elden-ring {
+            background-color: #2f4f4f;
+        }
+
+        .minecraft {
+            background-color: #34a853;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gaming Information</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="section">
+            <div class="game fortnite">
+                <div class="game-header">
+                    <h2>Fortnite</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/fortnite.jpg" alt="Fortnite">
+                    <p><strong>Creator:</strong> Epic Games</p>
+                    <p><strong>Release Date:</strong> July 25, 2017</p>
+                    <p><strong>Created In:</strong> USA</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, Nintendo Switch, PC, iOS, Android</p>
+                    <p><strong>Game Modes:</strong> Battle Royale, Creative, Save the World</p>
+                    <p><strong>About the Game:</strong> Fortnite is a globally popular battle royale game that has revolutionized the gaming industry. With its unique blend of fast-paced combat and creative building mechanics, players can engage in 100-player battles or create their own worlds in Creative mode. The game's regular updates and live events keep the community engaged, with new skins, emotes, and storylines frequently introduced. Fortnite is more than just a game; it’s a cultural phenomenon with concerts, movie premieres, and collaborations with major franchises.</p>
+                    <p><strong>Rare Skin:</strong> Renegade Raider</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.epicgames.com/fortnite/en-US/buy" class="purchase-link">Epic Games Store</a></p>
+                </div>
+            </div>
+
+            <div class="game fifa">
+                <div class="game-header">
+                    <h2>FIFA</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/fifa.jpg" alt="FIFA">
+                    <p><strong>Creator:</strong> EA Sports</p>
+                    <p><strong>Release Date:</strong> September 27, 2023 (FIFA 24)</p>
+                    <p><strong>Created In:</strong> Canada</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, PC, Nintendo Switch</p>
+                    <p><strong>Game Modes:</strong> Career Mode, Ultimate Team, Volta, Pro Clubs</p>
+                    <p><strong>About the Game:</strong> FIFA is the most successful soccer simulation game, beloved by millions of fans worldwide. Each annual release updates the rosters, refines the gameplay mechanics, and often adds new modes or features. FIFA 24, the latest installment, brings enhanced graphics, more realistic player movements, and a deeper Career Mode. Ultimate Team remains one of the most popular modes, allowing players to build their dream team from a wide selection of players past and present.</p>
+                    <p><strong>Legendary Player:</strong> Pele</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.ea.com/games/fifa/fifa-24" class="purchase-link">EA Sports</a></p>
+                </div>
+            </div>
+
+            <div class="game clash-royale">
+                <div class="game-header">
+                    <h2>Clash Royale</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/clash-royale.jpg" alt="Clash Royale">
+                    <p><strong>Creator:</strong> Supercell</p>
+                    <p><strong>Release Date:</strong> March 2, 2016</p>
+                    <p><strong>Created In:</strong> Finland</p>
+                    <p><strong>Platforms:</strong> iOS, Android</p>
+                    <p><strong>Game Modes:</strong> 1v1, 2v2, Special Events, Clan Wars</p>
+                    <p><strong>About the Game:</strong> Clash Royale is a real-time strategy game that combines elements from collectible card games, tower defense, and multiplayer online battle arena. Players must collect and upgrade cards featuring troops, spells, and defenses, and use them to knock down the opponent’s towers. The game’s competitive nature and frequent updates make it one of the most played mobile games globally. Supercell frequently introduces new cards and game modes, keeping the gameplay fresh and exciting.</p>
+                    <p><strong>Rare Card:</strong> Mega Minion</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://supercell.com/en/games/clashroyale/" class="purchase-link">Google Play Store</a> | <a href="https://supercell.com/en/games/clashroyale/" class="purchase-link">Apple App Store</a></p>
+                </div>
+            </div>
+
+            <div class="game free-fire">
+                <div class="game-header">
+                    <h2>Free Fire</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/free-fire.jpg" alt="Free Fire">
+                    <p><strong>Creator:</strong> Garena</p>
+                    <p><strong>Release Date:</strong> September 30, 2017</p>
+                    <p><strong>Created In:</strong> Singapore</p>
+                    <p><strong>Platforms:</strong> iOS, Android</p>
+                    <p><strong>Game Modes:</strong> Battle Royale, Clash Squad</p>
+                    <p><strong>About the Game:</strong> Free Fire is a battle royale game designed specifically for mobile platforms. It features fast-paced gameplay with 50 players in each match, where the goal is to be the last person standing. Players can choose their starting position, grab weapons and supplies, and fight their way through the battlefield. The game offers a variety of characters, each with unique abilities, which adds a layer of strategy to the gameplay. Free Fire is known for its engaging and straightforward controls, making it accessible to a wide audience.</p>
+                    <p><strong>Popular Character:</strong> DJ Alok</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.garena.sg/freefire/" class="purchase-link">Google Play Store</a> | <a href="https://www.garena.sg/freefire/" class="purchase-link">Apple App Store</a></p>
+                </div>
+            </div>
+
+            <div class="game rocket-league">
+                <div class="game-header">
+                    <h2>Rocket League</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/rocket-league.jpg" alt="Rocket League">
+                    <p><strong>Creator:</strong> Psyonix</p>
+                    <p><strong>Release Date:</strong> July 7, 2015</p>
+                    <p><strong>Created In:</strong> USA</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, Nintendo Switch, PC</p>
+                    <p><strong>Game Modes:</strong> Soccar, Hoops, Rumble, Dropshot</p>
+                    <p><strong>About the Game:</strong> Rocket League is a unique sports game that combines soccer with high-flying acrobatic vehicles. Players compete in teams, using rocket-powered cars to hit a giant ball into the opponent's goal. The game is known for its fast-paced and highly competitive gameplay, which has spawned a large esports scene. Rocket League’s addictive nature and simple controls make it easy to pick up but challenging to master.</p>
+                    <p><strong>Rare Vehicle:</strong> Octane</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.rocketleague.com/" class="purchase-link">Rocket League Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game zelda">
+                <div class="game-header">
+                    <h2>The Legend of Zelda: Breath of the Wild</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/zelda.jpg" alt="The Legend of Zelda: Breath of the Wild">
+                    <p><strong>Creator:</strong> Nintendo</p>
+                    <p><strong>Release Date:</strong> March 3, 2017</p>
+                    <p><strong>Created In:</strong> Japan</p>
+                    <p><strong>Platforms:</strong> Nintendo Switch, Wii U</p>
+                    <p><strong>Game Modes:</strong> Single-player</p>
+                    <p><strong>About the Game:</strong> The Legend of Zelda: Breath of the Wild is an open-world action-adventure game that redefined the genre. Players take control of Link, who must explore the vast kingdom of Hyrule to defeat Calamity Ganon and save Princess Zelda. The game is praised for its non-linear gameplay, allowing players to tackle objectives in any order they choose. With a focus on exploration, physics-based puzzles, and survival elements, Breath of the Wild offers an immersive experience unlike any other.</p>
+                    <p><strong>Legendary Weapon:</strong> Master Sword</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.zelda.com/breath-of-the-wild/" class="purchase-link">Nintendo Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game baldurs-gate">
+                <div class="game-header">
+                    <h2>Baldur's Gate III</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/baldurs-gate.jpg" alt="Baldur's Gate III">
+                    <p><strong>Creator:</strong> Larian Studios</p>
+                    <p><strong>Release Date:</strong> August 3, 2023</p>
+                    <p><strong>Created In:</strong> Belgium</p>
+                    <p><strong>Platforms:</strong> PC, PS5, Xbox Series X/S</p>
+                    <p><strong>Game Modes:</strong> Single-player, Multiplayer</p>
+                    <p><strong>About the Game:</strong> Baldur's Gate III is a role-playing game set in the Dungeons & Dragons universe. It features a rich narrative with branching storylines and deep character development. Players can create their own characters or play as one of several pre-made characters, each with their own backstories. The game offers turn-based combat, exploration, and decision-making that impacts the story’s outcome. Baldur's Gate III has received critical acclaim for its storytelling, voice acting, and replayability.</p>
+                    <p><strong>Iconic Spell:</strong> Fireball</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://baldursgate3.game/" class="purchase-link">Baldur's Gate III Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game alan-wake">
+                <div class="game-header">
+                    <h2>Alan Wake II</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/alan-wake.jpg" alt="Alan Wake II">
+                    <p><strong>Creator:</strong> Remedy Entertainment</p>
+                    <p><strong>Release Date:</strong> October 17, 2023</p>
+                    <p><strong>Created In:</strong> Finland</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, PC</p>
+                    <p><strong>Game Modes:</strong> Single-player</p>
+                    <p><strong>About the Game:</strong> Alan Wake II is a psychological horror game that continues the story of the original Alan Wake. Players take on the role of Alan, a writer trapped in a nightmarish reality where the lines between fiction and reality blur. The game is known for its gripping narrative, atmospheric settings, and unique gameplay that combines action with puzzle-solving. Remedy Entertainment has pushed the boundaries of storytelling in gaming with Alan Wake II, making it a must-play for fans of the genre.</p>
+                    <p><strong>Signature Weapon:</strong> Flashlight</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.alanwake.com/" class="purchase-link">Alan Wake II Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game cyberpunk">
+                <div class="game-header">
+                    <h2>Cyberpunk 2077</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/cyberpunk.jpg" alt="Cyberpunk 2077">
+                    <p><strong>Creator:</strong> CD Projekt Red</p>
+                    <p><strong>Release Date:</strong> December 10, 2020</p>
+                    <p><strong>Created In:</strong> Poland</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, PC, Stadia</p>
+                    <p><strong>Game Modes:</strong> Single-player</p>
+                    <p><strong>About the Game:</strong> Cyberpunk 2077 is an open-world RPG set in a dystopian future where players assume the role of V, a mercenary navigating the dangerous streets of Night City. The game offers a vast open world filled with cybernetic enhancements, high-tech weaponry, and a wide range of characters. Despite its rocky launch, Cyberpunk 2077 has since received significant updates and expansions that have improved the gameplay experience. The game's deep story, complex characters, and richly detailed world make it a standout in the RPG genre.</p>
+                    <p><strong>Notable Character:</strong> Johnny Silverhand</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.cyberpunk.net/" class="purchase-link">Cyberpunk 2077 Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game apex-legends">
+                <div class="game-header">
+                    <h2>Apex Legends</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/apex-legends.jpg" alt="Apex Legends">
+                    <p><strong>Creator:</strong> Respawn Entertainment</p>
+                    <p><strong>Release Date:</strong> February 4, 2019</p>
+                    <p><strong>Created In:</strong> USA</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, Nintendo Switch, PC</p>
+                    <p><strong>Game Modes:</strong> Battle Royale, Arenas</p>
+                    <p><strong>About the Game:</strong> Apex Legends is a free-to-play battle royale game that combines fast-paced gameplay with hero-based mechanics. Players choose from a roster of "Legends," each with unique abilities, and work in squads to be the last team standing. The game is set in the Titanfall universe and is known for its smooth movement mechanics, including sliding and ziplines. Apex Legends has been praised for its innovative ping system and team-oriented gameplay, making it one of the most popular battle royale games.</p>
+                    <p><strong>Legendary Skin:</strong> Heirloom Sets</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.ea.com/games/apex-legends" class="purchase-link">Apex Legends Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game elden-ring">
+                <div class="game-header">
+                    <h2>Elden Ring</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/elden-ring.jpg" alt="Elden Ring">
+                    <p><strong>Creator:</strong> FromSoftware</p>
+                    <p><strong>Release Date:</strong> February 25, 2022</p>
+                    <p><strong>Created In:</strong> Japan</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, PC</p>
+                    <p><strong>Game Modes:</strong> Single-player, Multiplayer</p>
+                    <p><strong>About the Game:</strong> Elden Ring is an action RPG developed by FromSoftware, known for their challenging gameplay and intricate world-building. The game features a vast open world, known as the Lands Between, which players can explore on foot or horseback. Combat is a mix of melee, ranged, and magic attacks, with a heavy emphasis on timing and strategy. Elden Ring's story is a collaboration between Hidetaka Miyazaki and George R.R. Martin, creating a dark and immersive narrative that has captivated players worldwide.</p>
+                    <p><strong>Legendary Weapon:</strong> Moonveil Katana</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.eldenring.com/" class="purchase-link">Elden Ring Official Site</a></p>
+                </div>
+            </div>
+
+            <div class="game minecraft">
+                <div class="game-header">
+                    <h2>Minecraft</h2>
+                </div>
+                <div class="game-content">
+                    <img src="https://example.com/minecraft.jpg" alt="Minecraft">
+                    <p><strong>Creator:</strong> Mojang Studios</p>
+                    <p><strong>Release Date:</strong> November 18, 2011</p>
+                    <p><strong>Created In:</strong> Sweden</p>
+                    <p><strong>Platforms:</strong> PS5, Xbox Series X/S, Nintendo Switch, PC, iOS, Android</p>
+                    <p><strong>Game Modes:</strong> Survival, Creative, Adventure, Spectator</p>
+                    <p><strong>About the Game:</strong> Minecraft is a sandbox game that allows players to build and explore endless worlds made of blocks. The game features different modes, including Survival, where players must gather resources and fend off enemies, and Creative, where players have unlimited resources to create whatever they can imagine. Minecraft's simple yet powerful mechanics have made it one of the best-selling games of all time, with a massive community that continues to create and share content across various platforms.</p>
+                    <p><strong>Iconic Block:</strong> Diamond Block</p>
+                    <p><strong>Purchase Link:</strong> <a href="https://www.minecraft.net/" class="purchase-link">Minecraft Official Site</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <h2>Login/Sign Up</h2>
+        <p>Stay updated with the latest gaming news and updates.</p>
+        <form action="login">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <button type="submit">Login</button>
+        </form>
+        <form action="signup">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Create a password">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries and support, feel free to contact us.</p>
+        <form action="contact">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Gaming Information. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.querySelectorAll('.game').forEach(function (game) {
+            game.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
